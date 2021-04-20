@@ -4,9 +4,9 @@ const styles = require("../styles/home.styl")
 
 const Home = () => {
   return (
-    <Layout>
-
-    </Layout>
+      <Layout title="首页" description="首页">
+        <div>my-blog</div>
+      </Layout>
   )
 }
 

@@ -1,5 +1,14 @@
 module.exports = {
-  plugins: ["gatsby-plugin-stylus", "gatsby-plugin-react-helmet"],
+  plugins: [
+    "gatsby-plugin-stylus", 
+    "gatsby-plugin-react-helmet",
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography`,
+      },
+    },
+  ],
   siteMetadata: {
     title: "My Blog",
     author: "Amberley Romo",

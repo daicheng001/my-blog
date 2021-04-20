@@ -15,12 +15,16 @@ const Layout = ({ title, description, children }) => {
       }
     }
   `)
-  console.log(data)
   return (
     <div>
       <Helmet>
         <title>{title || siteMetadata.title}</title>
+        <meta name='description' content={ description } />
+        <meta name="keywords" content=""/>
       </Helmet>
+      <body style={{ margin: `1rem auto`, maxWidth: 900,}}>
+        {children}
+      </body>
     </div>
   )
 }
