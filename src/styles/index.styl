@@ -1,0 +1,61 @@
+// body 
+//   margin: 0;
+//   font-family: Open Sans,Helvetica Neue,Helvetica,Segoe UI,Arial,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif;
+//   color: #333;
+//   font-weight: 300;
+:local(.nvabar)
+  min-height: 650px;
+  width: 100%;
+  background-image: url("https://templatemag.com/demo/templates/Instant/img/back.jpg")
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden
+
+:local(.nav_header)
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  align-items: center;
+  border-color: transparent;
+  background-color: rgba(0, 0, 0, 0.5);
+
+
+:local(.title)
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: skyblue
+
+:local(.nav)
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 55px;
+  line-height: 55px;
+  margin: 0;
+  li 
+    width: 100px;
+    padding: 0 20px;
+    list-style: none;
+    margin: 0;
+    a
+      text-decoration: none;
+      color: #fff
+      display: block;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+      background-image: none;
+      text-shadow: none;
+      &:hover
+        color: skyblue;
+        border-bottom: 2px solid skyblue;
+
+:local(.nav_content)
+  width: 50%;
+  margin: auto;
+  margin-top: 150px;
+  text-align: center;
+  h1,h4 
+    color: #fff;
