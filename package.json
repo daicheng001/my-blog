@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "antd": "^4.15.3",
+    "classnames": "^2.3.1",
     "gatsby": "^2.25.1",
     "gatsby-plugin-react-helmet": "^3.3.14",
     "gatsby-plugin-stylus": "^2.3.13",
