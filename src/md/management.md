@@ -33,10 +33,9 @@
 ### 3.项目的路由配置
 
 - 1.react项目中有login页面以及登录之后的页面
-
-![微信截图_20210513152200.png](https://cdn.nlark.com/yuque/0/2021/png/21602791/1620890598064-e5f37da6-c84f-45b8-9f4e-6994bff5a488.png#align=left&display=inline&height=219&margin=%5Bobject%20Object%5D&name=%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20210513152200.png&originHeight=219&originWidth=1069&size=12849&status=done&style=none&width=1069)
-
-- 2.其他的页面在comment组件中设置，comment组件中通过layout组件封装全局头部组件以及全局的侧边栏组件![微信截图_20210513152734.png](https://cdn.nlark.com/yuque/0/2021/png/21602791/1620890874437-084614cf-9427-4918-ba6c-8cbc5087f373.png#align=left&display=inline&height=238&margin=%5Bobject%20Object%5D&name=%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20210513152734.png&originHeight=238&originWidth=838&size=17077&status=done&style=none&width=838)
+![微信截图_20210513152200.png](https://fyh2016cjcj.oss-cn-hangzhou.aliyuncs.com/mall/_rc-upload-1621316084709-30)
+- 2.其他的页面在comment组件中设置，comment组件中通过layout组件封装全局头部组件以及全局的侧边栏组件
+![微信截图_20210513152734.png](https://fyh2016cjcj.oss-cn-hangzhou.aliyuncs.com/mall/_rc-upload-1621316084709-30)
 - 3.在comment组件中内容部分则是通过二级路由进行匹配，这样就实现了点击侧边栏切换中间的内容
 
 
