@@ -20,6 +20,8 @@
     "gatsby-plugin-react-helmet": "^3.3.14",
     "gatsby-plugin-stylus": "^2.3.13",
     "gatsby-plugin-typography": "^3.3.0",
+    "gatsby-source-filesystem": "^3.5.0",
+    "gatsby-transformer-remark": "^4.2.0",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
@@ -34,5 +36,8 @@
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
+  },
+  "devDependencies": {
+    "pngquant": "^4.0.0"
   }
 }
