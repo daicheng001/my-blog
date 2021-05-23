@@ -3,9 +3,8 @@ import { Helmet } from "react-helmet"
 import { graphql, withPrefix, useStaticQuery } from "gatsby"
 import { siteMetadata } from "../../../gatsby-config"
 import styles from '../../styles/index.styl'
-import classnames from 'classnames'
+import { HomeOutlined, UserOutlined, BookOutlined, SendOutlined } from '@ant-design/icons';
 import { Row, Col } from 'antd'
-import classNames from "classnames"
 
 const Layout = ({ title, description, children }) => {
   const navbarRef = useRef(null)
@@ -21,7 +20,6 @@ const Layout = ({ title, description, children }) => {
   `)
   const handleScroll = () => {
     if (window.scrollY > 0) {
-      console.dir(navbarRef.current)
       navbarRef.current.classList.add(`${styles["navbarFix"]}`)
     }
   }
@@ -40,16 +38,18 @@ const Layout = ({ title, description, children }) => {
         <meta name="keywords" content=""/>
       </Helmet>
       <div>
-        <div className={ `${styles["nvabar"]}` }>
-          <div ref={navbarRef} className={ styles["nav_header"] }>
-            <div className={ styles["title"] }></div>
-            <ul className={ styles["nav"] }>
-              <li className={ styles["index"] }><a href="/">home</a></li>
-              <li className={ styles["about"] }><a href="/about">about</a></li>
-              <li className={ styles["github"] }><a href="/github">github</a></li>
-              <li className={ styles["concat"] }><a href="/concat">concat</a></li>
-            </ul>
-          </div>
+        <div ref={navbarRef} className={ styles["nav_header"] }>
+         <div className={ styles["nav_header_item"]}>
+          <div className={ styles["title"] }></div>
+          <ul className={ styles["nav"] }>
+            <li className={ styles["index"] }><a href="/"><HomeOutlined />首页</a></li>
+            <li className={ styles["about"] }><a href="/about"><UserOutlined />关于</a></li>
+            <li className={ styles["github"] }><a href="/github"><BookOutlined />我的书单</a></li>
+            <li className={ styles["concat"] }><a href="/concat"><SendOutlined />网站导航</a></li>
+          </ul>
+         </div>
+        </div>
+        <div className={ `${styles["nvabar"]}` } style={{ display: title === '首页' ? 'block' : 'none'}}>
           <Row className={ styles["nav_content"]} justify="start">
             <Col span={ 12 }>
               <h4>HELLO PEOPLE, MY NAME IS</h4>
@@ -58,9 +58,10 @@ const Layout = ({ title, description, children }) => {
             </Col>
           </Row>
         </div>
-        <div style={{ margin: `1rem auto`, maxWidth: 900,}}>
-          {children}
-        </div>
+        <div className={ styles["otherNavbar"]} style={{ display: title === '首页' ? 'none' : 'block'}}></div>
+      </div>
+      <div style={{ margin: `1rem auto`, maxWidth: 1125,}}>
+        {children}
       </div>
     </>
   )

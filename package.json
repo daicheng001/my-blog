@@ -14,13 +14,17 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
-    "antd": "^4.15.3",
+    "@ant-design/icons": "^4.6.2",
+    "@deckdeckgo/highlight-code": "^3.0.2",
+    "antd": "^4.15.6",
     "classnames": "^2.3.1",
     "gatsby": "^2.25.1",
     "gatsby-plugin-react-helmet": "^3.3.14",
     "gatsby-plugin-sharp": "^3.5.0",
     "gatsby-plugin-stylus": "^2.3.13",
     "gatsby-plugin-typography": "^3.3.0",
+    "gatsby-remark-highlight-code": "^3.0.0",
+    "gatsby-remark-vscode": "^3.2.1",
     "gatsby-source-filesystem": "^3.5.0",
     "gatsby-transformer-remark": "^4.2.0",
     "gatsby-transformer-sharp": "^3.5.0",
